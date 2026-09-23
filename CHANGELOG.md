@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.1 — 2026-09-23
+
+Editorial and repository polish. Competition results and technical findings are unchanged.
+
+- Added direct discovery of both the canonical Markdown report and the designed publication PDF.
+- Added a dedicated case index and expanded all nine case pages with investigation scope, cross-case relevance and validation state.
+- Corrected the documented repository tree so it matches the published files.
+- Clarified source-report provenance in the publication note.
+- Converted the internal-looking PDF design instructions in Appendix D into a record of the released publication design system.
+
 ## 1.0.0 — 2026-09-23
 
 Initial public release.

@@ -19,7 +19,7 @@ This report consolidates nine separate HOLMES CTF 2026 Sherlock investigations i
 
 Commands, local workflow details and repetitive challenge-specific troubleshooting are intentionally minimized. Exact hashes, timestamps, hostnames, addresses, credentials, protocol values and other evidentiary details are retained where they materially support a finding.
 
-The individual audited reports remain the source of record for case-level detail. This master report presents the wider incident picture.
+Nine audited case reports were used as source records during consolidation. Their SHA-256 hashes are retained in Appendix C for provenance; this repository publishes the consolidated master report as the canonical public analysis, with lightweight case navigation pages for each Sherlock.
 
 ---
 
@@ -1702,9 +1702,9 @@ The master report was generated from the nine audited case reports listed below.
 
 ---
 
-# Appendix D — Master Report Design Specification
+# Appendix D — Publication Design System
 
-The PDF/layout stage should preserve the following visual system:
+The released publication PDF uses the following visual system:
 
 | Element | Specification |
 |---|---|
@@ -1719,13 +1719,13 @@ The PDF/layout stage should preserve the following visual system:
 | Open / warning amber | `#B7791F` |
 | Code / evidence panel | `#0D3039` |
 
-Recommended composition:
+Publication composition:
 
 - dark teal / blue-grey cover (`#183A42`) rather than black, preserving a Blue Team / DFIR identity without a cyberpunk aesthetic;
 - light body pages for long-form readability;
 - light chapter openers with large low-contrast case numbers;
 - integrated cyber-investigative overlays on the cover: node-link analysis, London map traces, packet-flow motifs, endpoint/server/mobile/drone/AD pivots and a restrained evidence progression;
-- visual motifs must remain evidence-driven and semantically tied to investigation, infrastructure, telemetry or attack progression; no floating report pages or arbitrary decorative geometry;
+- visual motifs remain evidence-driven and semantically tied to investigation, infrastructure, telemetry or attack progression; no floating report pages or arbitrary decorative geometry;
 - monospace treatment for hashes, SIDs, paths, addresses and protocol values;
 - teal as the primary Blue Team / DFIR identity color;
 - technical blue for pivots, correlation paths and secondary evidence;
@@ -1748,7 +1748,7 @@ DFIR · Threat Hunting · Reverse Engineering
 EXPLOIT BAG CHASER · #211 / 5,637 TEAMS · 104 / 111 FLAGS · 8,200 POINTS
 ```
 
-The first interior spread should carry:
+The first interior spread carries:
 
 > **Nine investigations. One operation.**
 

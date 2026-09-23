@@ -41,9 +41,13 @@ Rather than presenting nine disconnected challenge solutions, the material is or
 
 ## Read the investigation
 
-**[Read the complete master investigation →](reports/HOLMES_2026_The_Reichenbach_Directive.md)**
+| Edition | Link | Best for |
+|---|---|---|
+| **Canonical Markdown** | **[Read the complete master investigation →](reports/HOLMES_2026_The_Reichenbach_Directive.md)** | GitHub reading, searchable technical detail and future corrections |
+| **Publication PDF** | **[Open / download the designed PDF →](reports/HOLMES_2026_The_Reichenbach_Directive_PUBLICATION_FINAL_RELEASE.pdf)** | Offline reading, portfolio sharing and the fixed publication layout |
+| **Case index** | **[Browse all nine Sherlocks →](cases/README.md)** | Fast case-by-case navigation, status and cross-case pivots |
 
-The master report is the canonical GitHub write-up. It includes the executive summary, methodology, cross-case reconstruction, all nine Sherlock investigations, unified ATT&CK mapping, detection opportunities, the full 111-task validation matrix, and unresolved-task appendix.
+The Markdown edition is the canonical public analysis. The PDF is the designed publication snapshot and includes the official competition certificate as its final page.
 
 ## Cross-case investigation map
 
@@ -118,8 +122,10 @@ holmes-ctf-2026-reichenbach-directive/
 ├── CONTRIBUTING.md
 ├── CHANGELOG.md
 ├── reports/
-│   └── HOLMES_2026_The_Reichenbach_Directive.md
+│   ├── HOLMES_2026_The_Reichenbach_Directive.md
+│   └── HOLMES_2026_The_Reichenbach_Directive_PUBLICATION_FINAL_RELEASE.pdf
 ├── cases/
+│   ├── README.md
 │   ├── 01-silent-dividend.md
 │   ├── 02-bottle-out.md
 │   ├── 03-whisper-chain.md
