@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.2 — 2026-09-23
+
+README cover rendering fix. Investigation content and competition results are unchanged.
+
+- Added a GitHub-native landscape SVG cover optimized for desktop and mobile README rendering.
+- Replaced the tall 1100×1555 WebP README cover with the responsive SVG banner.
+- Retained the original WebP asset as a publication/source asset.
+- Updated the documented repository tree.
+
 ## 1.0.1 — 2026-09-23
 
 Editorial and repository polish. Competition results and technical findings are unchanged.

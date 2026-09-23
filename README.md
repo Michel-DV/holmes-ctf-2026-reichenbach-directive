@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/cover.webp" alt="HOLMES CTF 2026 — The Reichenbach Directive" width="520">
+  <img src="./assets/cover.svg" alt="HOLMES CTF 2026 — The Reichenbach Directive cover" width="100%">
 </p>
 
 <h1 align="center">HOLMES CTF 2026 — The Reichenbach Directive</h1>
@@ -136,6 +136,7 @@ holmes-ctf-2026-reichenbach-directive/
 │   ├── 08-borrowed-name.md
 │   └── 09-last-light.md
 ├── assets/
+│   ├── cover.svg
 │   ├── cover.webp
 │   └── master-timeline.svg
 └── .github/

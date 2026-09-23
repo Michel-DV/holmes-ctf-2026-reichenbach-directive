@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="680" viewBox="0 0 1600 680" role="img" aria-labelledby="title desc">
+  <title id="title">HOLMES CTF 2026 — The Reichenbach Directive</title>
+  <desc id="desc">DFIR investigation cover for Operation DIOGENES by MichelDV / InFracturaVeritas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071217"/>
+      <stop offset="0.55" stop-color="#102A33"/>
+      <stop offset="1" stop-color="#183A42"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4CC9F0"/>
+      <stop offset="0.5" stop-color="#0F9D8A"/>
+      <stop offset="1" stop-color="#9FEF00"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#7FA6B2" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="680" rx="26" fill="url(#bg)"/>
+  <rect width="1600" height="680" rx="26" fill="url(#grid)"/>
+  <rect x="0" y="0" width="12" height="680" rx="6" fill="url(#accent)"/>
+
+  <g opacity=".9">
+    <path d="M1110 106 L1262 160 L1412 116 L1512 210 L1428 318 L1518 428 L1380 528 L1218 486 L1090 566 L988 458 L1028 326 L946 224 Z"
+          fill="none" stroke="#4CC9F0" stroke-opacity=".23" stroke-width="2"/>
+    <path d="M1110 106 L1028 326 L1218 486 M1262 160 L1428 318 L1218 486 M1412 116 L1512 210 L1428 318 M1090 566 L1218 486 L1380 528 M946 224 L1028 326 L988 458"
+          fill="none" stroke="#9FEF00" stroke-opacity=".18" stroke-width="2"/>
+    <g fill="#0B2027" stroke="#4CC9F0" stroke-width="2">
+      <circle cx="1110" cy="106" r="13"/><circle cx="1262" cy="160" r="13"/><circle cx="1412" cy="116" r="13"/>
+      <circle cx="1512" cy="210" r="13"/><circle cx="1428" cy="318" r="13"/><circle cx="1518" cy="428" r="13"/>
+      <circle cx="1380" cy="528" r="13"/><circle cx="1218" cy="486" r="13"/><circle cx="1090" cy="566" r="13"/>
+      <circle cx="988" cy="458" r="13"/><circle cx="1028" cy="326" r="13"/><circle cx="946" cy="224" r="13"/>
+    </g>
+    <g font-family="Consolas, 'Liberation Mono', monospace" font-size="18" fill="#A9C8D1">
+      <text x="1080" y="76">XMPP</text>
+      <text x="1226" y="132">DFIR</text>
+      <text x="1374" y="86">CHAIN</text>
+      <text x="1457" y="181">ANDROID</text>
+      <text x="1446" y="300">PX4</text>
+      <text x="1466" y="463">KERBEROS</text>
+      <text x="1354" y="565">RBCD</text>
+      <text x="1176" y="523">AD</text>
+      <text x="1028" y="604">MEMORY</text>
+      <text x="918" y="493">LINUX</text>
+      <text x="970" y="356">MALWARE</text>
+      <text x="884" y="204">OSINT</text>
+    </g>
+  </g>
+
+  <g transform="translate(92 88)">
+    <text x="0" y="0" font-family="Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="700" letter-spacing="3" fill="#9FEF00">HOLMES CTF 2026</text>
+    <rect x="0" y="30" width="650" height="4" rx="2" fill="url(#accent)"/>
+
+    <text x="0" y="112" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="66" font-weight="800" fill="#F4FAFB">THE REICHENBACH</text>
+    <text x="0" y="182" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="66" font-weight="800" fill="#F4FAFB">DIRECTIVE</text>
+
+    <text x="0" y="238" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="27" font-weight="500" fill="#B6CFD6">A Complete DFIR Investigation of Operation DIOGENES</text>
+
+    <g transform="translate(0 292)" font-family="Consolas, 'Liberation Mono', monospace" font-size="20" font-weight="700">
+      <rect x="0" y="0" width="245" height="50" rx="8" fill="#0D3039" stroke="#285463"/>
+      <text x="22" y="32" fill="#DCEBED">RANK  #211 / 5,637</text>
+
+      <rect x="264" y="0" width="220" height="50" rx="8" fill="#0D3039" stroke="#285463"/>
+      <text x="286" y="32" fill="#DCEBED">104 / 111 FLAGS</text>
+
+      <rect x="503" y="0" width="170" height="50" rx="8" fill="#0D3039" stroke="#285463"/>
+      <text x="525" y="32" fill="#DCEBED">8,200 PTS</text>
+    </g>
+
+    <g transform="translate(0 394)" font-family="Inter, 'Segoe UI', Arial, sans-serif">
+      <text x="0" y="0" font-size="19" font-weight="700" letter-spacing="1.5" fill="#4CC9F0">DFIR</text>
+      <circle cx="72" cy="-7" r="3" fill="#6D929D"/>
+      <text x="92" y="0" font-size="19" font-weight="700" letter-spacing="1.5" fill="#4CC9F0">THREAT INTELLIGENCE</text>
+      <circle cx="315" cy="-7" r="3" fill="#6D929D"/>
+      <text x="335" y="0" font-size="19" font-weight="700" letter-spacing="1.5" fill="#4CC9F0">MALWARE ANALYSIS</text>
+      <circle cx="535" cy="-7" r="3" fill="#6D929D"/>
+      <text x="555" y="0" font-size="19" font-weight="700" letter-spacing="1.5" fill="#4CC9F0">RE</text>
+    </g>
+
+    <g transform="translate(0 492)">
+      <text x="0" y="0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="23" font-weight="700" fill="#F4FAFB">MichelDV</text>
+      <text x="128" y="0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="23" fill="#7398A3">/</text>
+      <text x="150" y="0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="23" font-weight="700" fill="#F4FAFB">InFracturaVeritas</text>
+      <text x="0" y="36" font-family="Consolas, 'Liberation Mono', monospace" font-size="17" fill="#85A6AF">EXPLOIT BAG CHASER · 17–21 SEP 2026</text>
+    </g>
+  </g>
+
+  <text x="1512" y="632" text-anchor="end" font-family="Consolas, 'Liberation Mono', monospace" font-size="16" fill="#6E98A3">NINE INVESTIGATIONS · ONE OPERATION</text>
+</svg>
