@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760">
+<rect width="1600" height="760" fill="#f8fbfc"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+<text x="70" y="85" font-size="46" font-weight="800" fill="#1e2a30">MASTER INCIDENT TIMELINE</text>
+<text x="70" y="125" font-size="24" fill="#718087">Dated evidence only · August–September 2026</text>
+<g stroke="#c9dde1" stroke-width="2">
+<line x1="360" y1="220" x2="1510" y2="220"/><line x1="360" y1="355" x2="1510" y2="355"/>
+<line x1="360" y1="490" x2="1510" y2="490"/><line x1="360" y1="625" x2="1510" y2="625"/>
+</g>
+<g font-size="21" font-weight="700">
+<text x="70" y="228" fill="#168da0">MURKNET / SNATCH</text>
+<text x="70" y="363" fill="#168da0">PAPER GHOST / BOTTLE OUT</text>
+<text x="70" y="498" fill="#0b5665">BORROWED NAME / LAST LIGHT</text>
+<text x="70" y="633" fill="#2d8e57">POISONED BRANCH</text>
+</g>
+<g fill="#168da0">
+<circle cx="390" cy="220" r="11"/><circle cx="520" cy="220" r="11"/><circle cx="825" cy="355" r="11"/><circle cx="1165" cy="355" r="11"/>
+</g>
+<g fill="#0b5665"><circle cx="1370" cy="490" r="11"/><circle cx="1420" cy="490" r="11"/><circle cx="1470" cy="490" r="11"/></g>
+<g fill="#2d8e57"><circle cx="1470" cy="625" r="11"/><circle cx="1530" cy="625" r="11"/></g>
+<g font-size="18" font-weight="700" fill="#1e2a30">
+<text x="390" y="190" text-anchor="middle">03 · password leak</text>
+<text x="520" y="258" text-anchor="middle">03 · Operation Snatch</text>
+<text x="825" y="325" text-anchor="middle">04 · USB → update.exe</text>
+<text x="1165" y="393" text-anchor="middle">02 · Operation Vanish</text>
+<text x="1350" y="458" text-anchor="end">08 · WS02 beacon</text>
+<text x="1420" y="528" text-anchor="middle">08 · svc_bkup → DC02</text>
+<text x="1490" y="458">09 · RBCD</text>
+<text x="1450" y="595" text-anchor="end">05 · Mettle session</text>
+<text x="1530" y="663" text-anchor="middle">05 · LOOT.zip</text>
+</g>
+</g></svg>

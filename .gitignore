@@ -1,0 +1,31 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Raw evidence and local working material
+*.E01
+*.raw
+*.mem
+*.pcap
+*.pcapng
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.bin
+*.elf
+*.img
+*.iso
+evidence/
+working/
+tmp/
+private/
+
+# Office/editor intermediates
+~$*
+*.tmp
+*.bak

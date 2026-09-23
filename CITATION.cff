@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this investigation in research or teaching, please cite this repository."
+title: "HOLMES CTF 2026 — The Reichenbach Directive: A Complete DFIR Investigation of Operation DIOGENES"
+type: report
+authors:
+  - name: "MichelDV / InFracturaVeritas"
+repository-code: "https://github.com/Michel-DV/holmes-ctf-2026-reichenbach-directive"
+url: "https://github.com/Michel-DV/holmes-ctf-2026-reichenbach-directive"
+date-released: 2026-09-23
+keywords:
+  - DFIR
+  - digital forensics
+  - incident response
+  - threat intelligence
+  - malware analysis
+  - reverse engineering
+  - Active Directory
+  - Kerberos
+  - Android
+  - UAV forensics
+  - Hack The Box
+  - HOLMES CTF 2026

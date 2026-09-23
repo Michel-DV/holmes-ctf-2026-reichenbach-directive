@@ -1,0 +1,31 @@
+name: Report correction
+description: Report a factual, evidentiary, rendering or citation issue
+title: "[Correction] "
+labels:
+  - documentation
+body:
+  - type: dropdown
+    id: case
+    attributes:
+      label: Sherlock / section
+      options:
+        - Master report
+        - S01 — Silent Dividend
+        - S02 — Bottle Out
+        - S03 — Whisper Chain
+        - S04 — Paper Ghost
+        - S05 — Poisoned Branch
+        - S06 — Silent Passenger
+        - S07 — Iron Feather
+        - S08 — Borrowed Name
+        - S09 — Last Light
+        - Repository / rendering
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should be corrected?
+      description: Include the page/section and the evidence supporting the correction.
+    validations:
+      required: true

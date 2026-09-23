@@ -41,23 +41,18 @@ Rather than presenting nine disconnected challenge solutions, the material is or
 
 ## Read the investigation
 
-**[Open the complete 49-page publication PDF →](reports/HOLMES_2026_The_Reichenbach_Directive.pdf)**
+**[Read the complete master investigation →](reports/HOLMES_2026_The_Reichenbach_Directive.md)**
 
-**[Read the complete master investigation in Markdown →](reports/HOLMES_2026_The_Reichenbach_Directive.md)**
+The master report is the canonical GitHub write-up. It includes the executive summary, methodology, cross-case reconstruction, all nine Sherlock investigations, unified ATT&CK mapping, detection opportunities, the full 111-task validation matrix, and unresolved-task appendix.
 
-The PDF stored in GitHub is web-optimized. The analytical content and page structure are unchanged from the publication release.
-
-## Investigation map
-
-<p align="center">
-  <img src="assets/incident-map.png" alt="The Reichenbach Directive incident map" width="900">
-</p>
+## Cross-case investigation map
 
 Several links between Sherlocks are independently supported by evidence recovered in separate cases:
 
 ```mermaid
 flowchart LR
-    S03["03 · Whisper Chain"] -->|"Operation Snatch / spur"| S02["02 · Bottle Out"]
+    S01["01 · Silent Dividend"] -->|"Silvertown / NAPOLEON pivot"| S03["03 · Whisper Chain"]
+    S03 -->|"Operation Snatch / spur"| S02["02 · Bottle Out"]
     S04["04 · Paper Ghost"] -->|"Tom Ainsworth / ticketing exposure"| S05["05 · Poisoned Branch"]
     S06["06 · Silent Passenger"] -->|"Pavilion Road"| S07["07 · Iron Feather"]
     S08["08 · Borrowed Name"] -->|"same svc_bkup artifact"| S09["09 · Last Light"]
@@ -100,7 +95,7 @@ The investigation includes:
 ## Master incident timeline
 
 <p align="center">
-  <img src="assets/master-timeline.png" alt="Master incident timeline" width="950">
+  <img src="assets/master-timeline.svg" alt="Master incident timeline" width="950">
 </p>
 
 ## Evidentiary model
@@ -122,9 +117,7 @@ holmes-ctf-2026-reichenbach-directive/
 ├── CITATION.cff
 ├── CONTRIBUTING.md
 ├── CHANGELOG.md
-├── SHA256SUMS.txt
 ├── reports/
-│   ├── HOLMES_2026_The_Reichenbach_Directive.pdf
 │   └── HOLMES_2026_The_Reichenbach_Directive.md
 ├── cases/
 │   ├── 01-silent-dividend.md
@@ -138,8 +131,7 @@ holmes-ctf-2026-reichenbach-directive/
 │   └── 09-last-light.md
 ├── assets/
 │   ├── cover.webp
-│   ├── incident-map.png
-│   └── master-timeline.png
+│   └── master-timeline.svg
 └── .github/
     └── ISSUE_TEMPLATE/
 ```
