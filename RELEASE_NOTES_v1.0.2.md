@@ -22,3 +22,4 @@ Publication release for the current repository edition.
 - Fully completed Sherlocks: **6 / 9**
 
 This release packages the existing v1.0.2 publication state; it does not change the competition findings.
+**Publication integrity:** the release workflow publishes the tracked PDF together with a SHA-256 manifest.
