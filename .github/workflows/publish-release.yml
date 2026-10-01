@@ -1,0 +1,74 @@
+name: Publish HOLMES investigation release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'reports/HOLMES_2026_The_Reichenbach_Directive_PUBLICATION_FINAL_RELEASE.pdf'
+      - 'CITATION.cff'
+      - 'RELEASE_NOTES_v1.0.2.md'
+      - '.github/workflows/publish-release.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: holmes-publication
+  cancel-in-progress: false
+
+env:
+  RELEASE_TAG: v1.0.2
+  PDF_PATH: reports/HOLMES_2026_The_Reichenbach_Directive_PUBLICATION_FINAL_RELEASE.pdf
+  CHECKSUM_PATH: reports/SHA256SUMS.txt
+
+jobs:
+  publish:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout publication
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+
+      - name: Validate publication and write checksum
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s "$PDF_PATH"
+          test "$(stat -c%s "$PDF_PATH")" -gt 100000
+          sha256sum "$(basename "$PDF_PATH")" | sed "s#  #  #" > "$CHECKSUM_PATH"
+          # Recreate checksum with the path expected by readers from the reports directory.
+          (
+            cd reports
+            sha256sum "$(basename "$PDF_PATH")" > SHA256SUMS.txt
+          )
+          cat "$CHECKSUM_PATH"
+
+      - name: Commit integrity manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Michel-DV"
+          git config user.email "232046078+Michel-DV@users.noreply.github.com"
+          git add "$CHECKSUM_PATH"
+          if ! git diff --cached --quiet; then
+            git commit -m "release: add HOLMES v1.0.2 integrity manifest"
+            git push origin HEAD:main
+          fi
+
+      - name: Publish or refresh v1.0.2 release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git fetch origin main --tags
+          TARGET_SHA=$(git rev-parse origin/main)
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG"               "$PDF_PATH#HOLMES CTF 2026 - The Reichenbach Directive PDF"               "$CHECKSUM_PATH#SHA-256 integrity manifest"               --clobber
+            gh release edit "$RELEASE_TAG"               --title "HOLMES CTF 2026 - The Reichenbach Directive - v1.0.2"               --notes-file RELEASE_NOTES_v1.0.2.md
+          else
+            gh release create "$RELEASE_TAG"               "$PDF_PATH#HOLMES CTF 2026 - The Reichenbach Directive PDF"               "$CHECKSUM_PATH#SHA-256 integrity manifest"               --target "$TARGET_SHA"               --title "HOLMES CTF 2026 - The Reichenbach Directive - v1.0.2"               --notes-file RELEASE_NOTES_v1.0.2.md
+          fi
