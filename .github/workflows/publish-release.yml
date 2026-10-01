@@ -38,8 +38,6 @@ jobs:
           set -euo pipefail
           test -s "$PDF_PATH"
           test "$(stat -c%s "$PDF_PATH")" -gt 100000
-          sha256sum "$(basename "$PDF_PATH")" | sed "s#  #  #" > "$CHECKSUM_PATH"
-          # Recreate checksum with the path expected by readers from the reports directory.
           (
             cd reports
             sha256sum "$(basename "$PDF_PATH")" > SHA256SUMS.txt
