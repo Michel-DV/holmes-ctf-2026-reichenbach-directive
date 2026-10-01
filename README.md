@@ -15,6 +15,7 @@
   <img alt="Validated" src="https://img.shields.io/badge/validated-104%20%2F%20111-2D8E57?style=flat-square">
   <img alt="Points" src="https://img.shields.io/badge/points-8%2C200-0B5665?style=flat-square">
   <img alt="Focus" src="https://img.shields.io/badge/focus-DFIR%20%7C%20Threat%20Intel%20%7C%20RE-1E2A30?style=flat-square">
+  <a href="https://github.com/Michel-DV/holmes-ctf-2026-reichenbach-directive/releases/tag/v1.0.2"><img alt="Release" src="https://img.shields.io/badge/release-v1.0.2-2D8E57?style=flat-square"></a>
 </p>
 
 ---
@@ -47,7 +48,7 @@ Rather than presenting nine disconnected challenge solutions, the material is or
 | **Publication PDF** | **[Open / download the designed PDF →](reports/HOLMES_2026_The_Reichenbach_Directive_PUBLICATION_FINAL_RELEASE.pdf)** | Offline reading, portfolio sharing and the fixed publication layout |
 | **Case index** | **[Browse all nine Sherlocks →](cases/README.md)** | Fast case-by-case navigation, status and cross-case pivots |
 
-The Markdown edition is the canonical public analysis. The PDF is the designed publication snapshot and includes the official competition certificate as its final page.
+The Markdown edition is the canonical public analysis. The PDF is the designed publication snapshot and includes the official competition certificate as its final page. Publication integrity is recorded in [`reports/SHA256SUMS.txt`](reports/SHA256SUMS.txt), and the fixed PDF is also attached to the [`v1.0.2` release](https://github.com/Michel-DV/holmes-ctf-2026-reichenbach-directive/releases/tag/v1.0.2).
 
 ## Cross-case investigation map
 
